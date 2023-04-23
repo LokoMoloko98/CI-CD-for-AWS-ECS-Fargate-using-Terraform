@@ -1,0 +1,18 @@
+1. Set up your AWS account to use terraform
+	a) Make sure you have cli access keys ready.
+	b) create s3 bucket to store state file
+	c) create dynamodb to store state table
+2. Set up the aws cli locally via the aws configure command and enter the access key details 
+3. Set up you project folder on github via the github GUI
+	a) make sure you have a .gitignore of type terraform
+	b) clone your project folder to work locally 
+4. create a variable.tf with these variables
+	a) region
+	b) project name
+	c) envrionment
+5. Give your variables values in the terraform.tfvars file
+6. Configure your providers.tf and link it to the aws account you will be working on
+7. Configure the backend of your project
+	a) enter state file s3 bucket details
+	b) enter dynamodb state table details
+8. Initialize the terraform project with the command terraform init in the terminal
