@@ -104,3 +104,14 @@ variable "number_of_instances" {
 variable "ami_key_pair_name" {
   type    = string
 }
+
+#rds variables
+variable "rds_username" {
+  description = "username to log into the rds db"
+  type        = string
+}
+
+variable "rds_password" {
+  description = "password to log into the rds db"
+  type        = string
+}
