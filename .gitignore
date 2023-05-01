@@ -34,3 +34,4 @@ override.tf.json
 terraform.rc
 
 bastion.pem
+rentzone.env
